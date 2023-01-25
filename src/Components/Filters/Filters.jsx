@@ -15,11 +15,12 @@ const Filters = ({ facets = [] }) => {
     >
       <Container>
         <ul className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 ">
-          {facets.map(
-            (li) =>
-              li.displayStyle !== "Price-Slider" && (
-                <FilterDropDown li={li} key={li.id} />
-              )
+          {facets.map((li) =>
+            li.id !== "currentprice" && li.id !== "floor" ? (
+              <FilterDropDown li={li} key={li.id} />
+            ) : (
+              ""
+            )
           )}
         </ul>
       </Container>
