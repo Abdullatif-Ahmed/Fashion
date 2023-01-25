@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --main-color: #0063d1;
+  --main-color-opacity: #0062d1b6;
+  --overlay: #1000ff1f;
+  --sale: #ff1074;
+  --featured: #c713c7;
+  --top-order: rgb(60, 60, 224);
+  --top-rating: rgb(247 200 29);
+  --top-discount: rgb(255 31 31);
+  --light: #f5f5f5;
+  --gray: #b3b3b3;
+  --text-color: #555555;
+  --heading: #39404a;
+  --transition: all 0.5s ease;
+  --box-shadow: 1px 2px 5px #dbdbdb;
+  --icon-box-shadow: 1px 2px 15px 0px #0000ff6b;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--light);
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input,
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+input:focus,
+button:focus,
+input:active,
+button:active {
+  border: none;
+  outline: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-4 {
+  flex: 4;
+}
+.btn1,
+.btn2 {
+  border-width: 2px !important;
+  border-radius: 6px !important;
+  -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  font-size: 15px !important;
+  padding: 15px 30px !important;
+  display: flex !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  align-items: center !important;
+  -webkit-box-align: center !important;
+  -moz-box-align: center !important;
+  -ms-flex-align: center !important;
+  -webkit-align-items: center !important;
+
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.btn1 {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  color: #fff;
+}
+.btn1:focus,
+.btn2:focus {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: 2px solid var(--main-color);
+}
+
+.btn1 svg,
+.btn2 svg {
+  margin-right: 6px;
+}
+.btn1:hover {
+  background-color: #fff !important;
+  color: var(--main-color);
+}
+.btn2 {
+  background-color: #fff !important;
+  border-color: var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+.btn2:hover {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+.sec-margin {
+  margin-bottom: 90px;
+}
+.w-fit {
+  width: fit-content;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 4;
+}
+
+/*///////////// Bootstrap carousel ///////////////////////*/
+
+.carousel-control-next,
+.carousel-control-prev {
+  display: none;
+}
+.carousel-indicators button {
+  background-color: var(--main-color) !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+}
+@media (min-width: 576px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    width: auto;
+    opacity: 1;
+  }
+}
+.carousel-control-next {
+  right: 20px;
+}
+.carousel-control-prev {
+  left: 20px;
+}
+.carousel-fade .fade {
+  visibility: hidden;
+  opacity: 0;
+}
+.carousel-fade .fade-left {
+  transform: translateX(-120%);
+  -webkit-transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  -o-transform: translateX(-120%);
+  -moz-transform: translateX(-120%);
+  visibility: hidden;
+  opacity: 0;
+}
+.carousel-fade .fade-right {
+  transform: translateX(120%);
+  -webkit-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  -o-transform: translateX(120%);
+  -moz-transform: translateX(120%);
+  visibility: hidden;
+  opacity: 0;
+}
+.carousel-fade .fade-down {
+  transform: translateY(-285%);
+  -webkit-transform: translateY(-285%);
+  -ms-transform: translateY(-285%);
+  -o-transform: translateY(-285%);
+  -moz-transform: translateY(-285%);
+  visibility: hidden;
+  opacity: 0;
+}
+.carousel-fade .fade-up {
+  transform: translateY(285%);
+  -webkit-transform: translateY(285%);
+  -ms-transform: translateY(285%);
+  -o-transform: translateY(285%);
+  -moz-transform: translateY(285%);
+  visibility: hidden;
+  opacity: 0;
+}
+.carousel-fade .carousel-item.active .fade,
+.carousel-fade .carousel-item.active .fade-left,
+.carousel-fade .carousel-item.active .fade-up,
+.carousel-fade .carousel-item.active .fade-down,
+.carousel-fade .carousel-item.active .fade-right {
+  animation: fade forwards 0.9s ease-in-out;
+}
+
+@keyframes fade {
+  to {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+  }
+}
+
+/*///////////////////////////////// Bootstrap pagination /////////////*/
+@media (max-width: 465px) {
+  .page-link {
+    padding: 5px 8px;
+  }
+}
+/*////////////////////////////////  slick slider /////////////////////*/
+.slick-prev,
+.slick-next {
+  width: auto !important;
+  height: auto !important;
+  z-index: 2 !important;
+  font-size: initial !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}
+.slick-arrow {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: var(--transition) !important;
+  -webkit-transition: var(--transition) !important;
+  -moz-transition: var(--transition) !important;
+  -ms-transition: var(--transition) !important;
+  -o-transition: var(--transition) !important;
+}
+.slick-slider:hover .slick-arrow {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.slick-slide > div {
+  padding: 0 10px !important;
+}
+.blogs_slider .slick-slide > div {
+  padding: 0 13px !important;
+}
+/*////////////////////// center slick slider///////////////////*/
+.slick-slider.center .slick-slide {
+  padding: 0px !important;
+  transition: opacity 0.6s linear !important;
+  -webkit-transition: opacity 0.6s linear !important;
+  -moz-transition: opacity 0.6s linear !important;
+  -ms-transition: opacity 0.6s linear !important;
+  -o-transition: opacity 0.6s linear !important;
+  opacity: 0.3 !important;
+  margin-bottom: 45px !important;
+}
+.slick-slider.center .slick-active {
+  opacity: 1 !important;
+}
+@media (min-width: 768px) {
+  .slick-slider.center .slick-slide {
+    padding: 0 20px !important;
+  }
+}
+@media (min-width: 992px) {
+  .slick-slider.center .slick-slide {
+    padding: 0 50px !important;
+  }
+}
+/*////////////////////// product slick slider////////////////*/
+.product_slider img {
+  border-radius: 9px !important;
+  -webkit-border-radius: 9px !important;
+  -moz-border-radius: 9px !important;
+}
+.product_slider .slick-dots {
+  position: relative !important;
+  margin-bottom: 25px !important;
+}
+.product_slider .slick-dots li {
+  width: 54px !important;
+  height: 60px !important;
+  margin: 0 5px !important;
+}
+.product_slider .slick-dots .slick-arrow {
+  display: none !important;
+}
+@media (min-width: 400px) {
+  .product_slider .slick-dots li {
+    width: 59px !important;
+    height: 62px !important;
+    margin: 0 9px !important;
+  }
+}
+@media (min-width: 576px) {
+  .product_slider .slick-list {
+    width: calc(100% - 80px) !important;
+    margin-left: 80px !important;
+  }
+  .product_slider .slick-dots {
+    position: absolute !important;
+    bottom: auto !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .product_slider .slick-dots li {
+    display: block !important;
+    margin: 0 0 16px !important;
+    width: 40px !important;
+    height: 51px !important;
+  }
+}
+/*////////////////////////////////////////////*/
+.heading-sec {
+  margin-bottom: 40px;
+}
+.heading-sec h2 {
+  color: var(--heading);
+  text-align: center;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin: 0;
+}
+@media (max-width: 575px) {
+  .col {
+    padding: 0 4px;
+  }
+}

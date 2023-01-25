@@ -1,0 +1,38 @@
+.nav_tabs {
+  box-shadow: var(--box-shadow) !important;
+  -webkit-box-shadow: var(--box-shadow) !important;
+}
+.nav_item {
+  padding: 2px !important;
+}
+@media (min-width: 576px) {
+  .nav_item {
+    padding: 0 19px !important;
+  }
+}
+@media (min-width: 768px) {
+  .nav_item {
+    padding: 0 28px !important;
+  }
+}
+.nav_link {
+  color: var(--heading) !important;
+  transition: var(--transition) !important;
+  -webkit-transition: var(--transition) !important;
+  -moz-transition: var(--transition) !important;
+  -ms-transition: var(--transition) !important;
+  -o-transition: var(--transition) !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  border: none !important;
+  text-transform: uppercase;
+  padding: 0 !important;
+}
+.nav_link:not(.active):hover,
+.nav_link.active {
+  color: var(--main-color) !important;
+  border: none !important;
+}
+.tab_icon {
+  margin-right: 3px;
+}

@@ -1,0 +1,66 @@
+.subscribe_sec {
+  padding: 50px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../../Assets/subscribeBg.webp);
+  color: #fff;
+  z-index: 1;
+}
+.overlay {
+  z-index: -1;
+  background-color: var(--overlay);
+}
+.subscribe_sec h2 {
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+.subscribe_sec p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.subscribe_sec form {
+  width: 100%;
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  text-align: center;
+}
+.subscribe_sec form input {
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+}
+.subscribe_sec form button {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 16px 0;
+  min-width: 180px;
+}
+.subscribe_sec form button .icon {
+  margin-right: 3px;
+  font-size: 20px;
+}
+@media (min-width: 400px) {
+  .subscribe_sec h2 {
+    font-size: 35px;
+  }
+  .subscribe_sec p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+@media (min-width: 768px) {
+  .subscribe_sec {
+    padding: 70px 0;
+  }
+}

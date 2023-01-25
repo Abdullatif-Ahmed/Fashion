@@ -1,0 +1,212 @@
+.mobile_mega_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 243px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
+.close_btn {
+  position: absolute;
+  right: -40px;
+  color: #fff;
+}
+
+@media (min-width: 330px) {
+  .mobile_mega_menu {
+    width: 290px;
+  }
+}
+
+@media (min-width: 375px) {
+  .mobile_mega_menu {
+    width: 315px;
+  }
+  .tab_btn {
+    height: 96px;
+  }
+}
+.list {
+  padding: 15px;
+  overflow-y: auto;
+  height: 100%;
+}
+.list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tab_btn {
+  height: 78px;
+}
+.tab_btn .tab_title {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  left: 0;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: black;
+}
+.tab_btn .tab_title .sub_title {
+  display: block;
+  font-weight: 100;
+}
+.menu {
+  position: absolute;
+  left: -100%;
+  overflow-y: auto;
+  background-color: #fff;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.heading {
+  color: var(--heading);
+  margin-bottom: 15px;
+}
+
+.heading,
+.heading button {
+  height: 50px;
+}
+.heading h3 {
+  line-height: 50px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  font-size: 20px;
+}
+.heading button {
+  width: 50px;
+}
+
+.list_title {
+  color: black;
+  padding: 26px 15px 15px;
+  background-color: var(--light);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+.nav a {
+  color: black;
+}
+.nav a:hover {
+  color: var(--main-color);
+}
+.circleImageList {
+  padding: 0 15px;
+}
+
+.circleImageList li:not(:last-child) {
+  border-bottom: 1px solid #efefef;
+}
+.circleImageList li a {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  padding: 10px 0;
+  display: block;
+}
+.circleImageList li a .item,
+.circleImageRight li a .item {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+.circleImageList li a .item .img_con img,
+.circleImageRight li a .item .img_con img,
+.circleImageList li a .item .img_con,
+.circleImageRight li a .item .img_con {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.circleImageList li a .item .img_con {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+.circleImageRight {
+  padding: 15px;
+}
+.circleImageRight li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.circleImageRight li a {
+  padding: 8px 12px;
+  background-color: var(--light);
+  display: block;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+}
+.circleImageRight li a .item {
+  justify-content: space-between;
+  direction: rtl;
+}
+.circleImageRight li a .item .img_con {
+  width: 62px;
+  height: 62px;
+}
+.imageBackground {
+  padding: 15px 15px 0;
+}
+.imageBackground li {
+  margin-bottom: 15px;
+}
+
+.imageBackground li a .item {
+  position: relative;
+}
+.imageBackground li a .item span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  left: 0;
+  color: black;
+  font-weight: 500;
+  padding-left: 12px;
+  font-size: 19px;
+  width: 180px;
+}
+.sale {
+  color: var(--sale) !important;
+}
+.aToZBrands {
+  padding: 15px 15px 0;
+  margin-bottom: 15px;
+  background-color: var(--light);
+}
+.aToZBrands li a,
+.aToZBrandsItem {
+  background-color: var(--heading) !important;
+  color: #fff !important;
+  padding: 10px !important;
+  text-align: center !important;
+  display: block !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.1px !important;
+}
+.aToZBrandsItem .item {
+  display: block !important;
+}

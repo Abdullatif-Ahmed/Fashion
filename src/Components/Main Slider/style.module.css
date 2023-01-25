@@ -1,0 +1,53 @@
+.carousel {
+  background-image: url(../../Assets/slider_bg_1.webp);
+}
+.carousel_item {
+  min-height: 500px !important;
+  display: flex !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center !important;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+@media (min-width: 991px) {
+  .carousel_item {
+    min-height: 580px !important;
+  }
+}
+.caption h1 {
+  color: var(--heading);
+  font-size: 32px;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+.caption a {
+  display: inline-block;
+}
+@media (min-width: 375px) {
+  .caption h1 {
+    font-size: 37px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .caption h1 {
+    font-size: 31px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .caption h1 {
+    font-size: 50px;
+    line-height: 57px;
+  }
+}
+.caption p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 42px;
+}
