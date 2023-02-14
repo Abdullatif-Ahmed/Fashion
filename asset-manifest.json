@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Fashion/static/css/main.bcb5f927.css",
-    "main.js": "/Fashion/static/js/main.ab4356cf.js",
+    "main.js": "/Fashion/static/js/main.c4425f61.js",
     "static/css/192.47249674.chunk.css": "/Fashion/static/css/192.47249674.chunk.css",
     "static/js/192.f3e26eed.chunk.js": "/Fashion/static/js/192.f3e26eed.chunk.js",
     "static/css/683.dcd6e64a.chunk.css": "/Fashion/static/css/683.dcd6e64a.chunk.css",
-    "static/js/683.a610f2eb.chunk.js": "/Fashion/static/js/683.a610f2eb.chunk.js",
+    "static/js/683.4c72442b.chunk.js": "/Fashion/static/js/683.4c72442b.chunk.js",
     "static/css/407.894366af.chunk.css": "/Fashion/static/css/407.894366af.chunk.css",
     "static/js/407.97e61aef.chunk.js": "/Fashion/static/js/407.97e61aef.chunk.js",
     "static/css/103.dcd6e64a.chunk.css": "/Fashion/static/css/103.dcd6e64a.chunk.css",
-    "static/js/103.c9554dc7.chunk.js": "/Fashion/static/js/103.c9554dc7.chunk.js",
+    "static/js/103.5ea41844.chunk.js": "/Fashion/static/js/103.5ea41844.chunk.js",
     "static/js/787.c2c1715b.chunk.js": "/Fashion/static/js/787.c2c1715b.chunk.js",
     "static/js/376.bd4b0503.chunk.js": "/Fashion/static/js/376.bd4b0503.chunk.js",
     "static/js/730.e3be1fe8.chunk.js": "/Fashion/static/js/730.e3be1fe8.chunk.js",
@@ -45,15 +45,15 @@
     "static/media/paypal.webp": "/Fashion/static/media/paypal.efde2a6152afb17c5c4b.webp",
     "static/media/user.webp": "/Fashion/static/media/user.df930d1813547332ce6b.webp",
     "main.bcb5f927.css.map": "/Fashion/static/css/main.bcb5f927.css.map",
-    "main.ab4356cf.js.map": "/Fashion/static/js/main.ab4356cf.js.map",
+    "main.c4425f61.js.map": "/Fashion/static/js/main.c4425f61.js.map",
     "192.47249674.chunk.css.map": "/Fashion/static/css/192.47249674.chunk.css.map",
     "192.f3e26eed.chunk.js.map": "/Fashion/static/js/192.f3e26eed.chunk.js.map",
     "683.dcd6e64a.chunk.css.map": "/Fashion/static/css/683.dcd6e64a.chunk.css.map",
-    "683.a610f2eb.chunk.js.map": "/Fashion/static/js/683.a610f2eb.chunk.js.map",
+    "683.4c72442b.chunk.js.map": "/Fashion/static/js/683.4c72442b.chunk.js.map",
     "407.894366af.chunk.css.map": "/Fashion/static/css/407.894366af.chunk.css.map",
     "407.97e61aef.chunk.js.map": "/Fashion/static/js/407.97e61aef.chunk.js.map",
     "103.dcd6e64a.chunk.css.map": "/Fashion/static/css/103.dcd6e64a.chunk.css.map",
-    "103.c9554dc7.chunk.js.map": "/Fashion/static/js/103.c9554dc7.chunk.js.map",
+    "103.5ea41844.chunk.js.map": "/Fashion/static/js/103.5ea41844.chunk.js.map",
     "787.c2c1715b.chunk.js.map": "/Fashion/static/js/787.c2c1715b.chunk.js.map",
     "376.bd4b0503.chunk.js.map": "/Fashion/static/js/376.bd4b0503.chunk.js.map",
     "730.e3be1fe8.chunk.js.map": "/Fashion/static/js/730.e3be1fe8.chunk.js.map",
@@ -61,6 +61,6 @@
   },
   "entrypoints": [
     "static/css/main.bcb5f927.css",
-    "static/js/main.ab4356cf.js"
+    "static/js/main.c4425f61.js"
   ]
 }
