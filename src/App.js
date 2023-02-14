@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Route, Routes, Navigate, BrowserRouter } from "react-router-dom";
+import { Route, Routes, Navigate, HashRouter } from "react-router-dom";
 import ErrorFallback from "./Components/Error Fallback";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
@@ -16,7 +16,7 @@ const Search = lazy(() => import("./Pages/Search"));
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <Suspense
           fallback={
@@ -89,7 +89,7 @@ function App() {
           <Footer />
         </Suspense>
       </ErrorBoundary>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
